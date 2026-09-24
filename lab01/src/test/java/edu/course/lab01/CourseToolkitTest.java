@@ -9,7 +9,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class CourseToolkitTest {
 
-    // --- Базовые тесты из шаблона ---
+    // Базовые тесты из шаблона
 
     @Test
     @DisplayName("isEven: возвращает true для четного числа 4")
@@ -23,7 +23,7 @@ class CourseToolkitTest {
         assertFalse(CourseToolkit.isEven(5));
     }
 
-    // --- Подготовительная часть (домашнее задание) ---
+    // Подготовительная часть
 
     @Test
     @DisplayName("isEven: возвращает true для отрицательного четного числа -8")
@@ -31,7 +31,7 @@ class CourseToolkitTest {
         assertTrue(CourseToolkit.isEven(-8));
     }
 
-    // --- isPrime ---
+    // isPrime
 
     @ParameterizedTest
     @ValueSource(ints = {-10, 0, 1})
@@ -54,7 +54,7 @@ class CourseToolkitTest {
         assertFalse(CourseToolkit.isPrime(number));
     }
 
-    // --- isPalindrome ---
+    // isPalindrome
 
     @Test
     @DisplayName("isPalindrome: возвращает true для палиндромов")
@@ -78,7 +78,7 @@ class CourseToolkitTest {
         assertThrows(IllegalArgumentException.class, () -> CourseToolkit.isPalindrome(null));
     }
 
-    // --- average ---
+    // average
 
     @Test
     @DisplayName("average: корректно вычисляет среднее для обычного массива")
